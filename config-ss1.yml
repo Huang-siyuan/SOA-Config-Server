@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/soa
+    password: 123456]
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  application:
+    name: SOA-SECOND-SERVICE
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+    register-with-eureka: 'true'
+    fetchRegistry: 'true'
+  instance:
+    instance-id: second-service-1
+    prefer-ip-address: 'true'
+server:
+  port: '8001'
