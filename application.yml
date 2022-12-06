@@ -2,7 +2,7 @@ spring:
   datasource:
     username: postgres
     url: jdbc:postgresql://localhost:5432/soa
-    password: 123456]
+    password: 123456
   jpa:
     properties:
       hibernate:
